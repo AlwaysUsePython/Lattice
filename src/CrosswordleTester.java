@@ -46,12 +46,11 @@ public class CrosswordleTester {
 		
 		used.add("ABYS");
 		
-		char[][] board = solver.depthFirstSearch(testBoard, true);
-		
-		for (char[] row : board) {
-			System.out.println(row);
+		try{
+			char[][] board = solver.depthFirstSearch(testBoard, true);
 		}
-		
+		catch (Exception e) {
+		}
 	}
 	
 }
